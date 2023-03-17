@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(33, 37, 41);
+    height: 60px;
+    width: 100%;
+}
+
+.navbar {
+    padding-left: 10px;
+}
+
+.left {
+    padding-left: 20px;
+}
+
+ul, li {
+    display: inline-block;
+}
+
+.menu {
+    float: left;
+    padding: 18.5px 18.5px;
+    overflow: hidden;
+}
+
+.logo {
+    color: white;
+    padding-top: 16.5px;
+    padding-right: 1%;
+    float: left;
+}
+
+.menu a {
+    color: rgb(154, 158, 159);
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a.active {
+    color: white;
+}
+
+.dropdown_btn {
+    margin-bottom: 18.5px;
+}
+
+.dropdown:hover .dropdown_content{
+    display: block;
+}
+
+.dropdown .dropdown_btn {
+    border: none;
+    color: rgb(154, 158, 159);
+    background-color: inherit;
+    outline: none;
+    font-size: 20px;
+}
+
+.dropdown_content {
+    background-color: white;
+    display: none;
+    z-index: 1;
+    position: absolute;
+    min-width: 91.17px;
+}
+
+.dropdown_content a {
+    background-color: rgb(33, 37, 41);
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+.dsb_button {
+    background: rgb(33, 37, 41) ;
+    border: none;
+    color: rgb(89, 92, 95);
+    font-size: 20px;
+}
+
+.search_bar {
+    float: right;
+    padding: 15px;
+    height: 30px;
+}
+
+#search {
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.search {
+    background-color: inherit;
+    border: 2px solid rgb(64, 133, 89);
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    color: rgb(64, 133, 89);
+}
+
+.search:hover {
+    background-color: green;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    background-color: inherit;
+    border: none;
+    padding-top: 10px;
+    padding-right: 20px;
+    float: right;
+    height: 50px;
+}
+
+@media screen and (max-width:768px) {
+    .hamburger {
+        display:inline;
+    }
+    .menu {
+        display: none;
+    }
+    .search_bar {
+        display: none;
+    }
+}  

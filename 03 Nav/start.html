@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="logo">
+                <li class="navbar">
+                    <h2>Navbar</h2>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li><a class="active" href="#">Home</a></li>
+                <li class="left"><a href="#">Link</a></li>
+                <li class="left">
+                    <div class="dropdown">
+                        <button class="dropdown_btn">Dropdown</button>
+                        <div class="dropdown_content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="left"><button class="dsb_button" disabled>Disabled</button></li>
+            </ul>
+            <ul class="search_bar">
+                <form>
+                    <li class="right"><label for="search"></label>
+                        <input type="text" id="search" name="search" placeholder="Search">
+                    </li>
+                    <li class="right"><button class="search">Search</button></li>
+                </form>
+            </ul>
+            <button class="hamburger">
+                <img src="hamburger.png" width="40" height="40">
+            </button>
+        </nav>
+    </header>
+</body>
+
+</html>
