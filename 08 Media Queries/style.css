@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
+.card {
+    height: 500px;
+    width: 320px;
+    background: linear-gradient(to right, rgb(165, 165, 165) 0%, rgb(175, 175, 175) 50%, rgb(185, 185, 185) 100%);
+    border-radius: 20px;
+    margin-left: 25px;
+    overflow: hidden;
+}
+
+.user {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar_image {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.datas {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.date {
+    color:white;
+    font-size: 12px;
+}
+
+.metaball {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.image {
+    height: 55%;
+}
+
+.cat_img {
+    height: 100%;
+    width: 100%;
+}
+
+.description {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(215, 215, 215) 0%, rgb(220, 220, 220) 50%, rgb(230, 230, 230) 100%);
+}
+
+.buttons {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.button {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+}
+
+.paragraph {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        width: 86.59%;
+        height: 100vh;
+        margin: auto;
+        justify-content: left;
+        margin-top: 60px;
+    }
+    .card {
+        margin-top: 25px;
+    }
+    .card.gatto1 {
+        margin-left: 0;
+    }
+    .card.gatto3 {
+        margin-left: 0;
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
+        margin-top: 100px;
+    }
+    .card {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
